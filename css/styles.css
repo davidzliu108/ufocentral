@@ -1,0 +1,55 @@
+html {
+    background-color: #DCDCDC;
+}
+
+.toptext {
+    text-align: center;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #A9A9A9;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+#active {
+    background-color: #04AA6d;
+}
+
+#ufologo { 
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.gridPhotos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    justify-items: center;
+    grid-gap: 5px;
+    grid-row-gap: 5px;
+}
+
+.gridp img {
+    width: 100%;
+    margin: 10px;
+}
