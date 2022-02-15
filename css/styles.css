@@ -3,7 +3,12 @@ html {
 }
 
 .toptext {
-    text-align: center;
+    text-align: left;
+    background-color:#191970;
+    padding: 10px;
+    color: white;
+    border-radius: 25px;
+    font-family: fantasy;
 }
 
 .navbar {
@@ -11,11 +16,11 @@ html {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #A9A9A9;
+    background-color: #191970;
 }
 
 li {
-    float: left;
+    float: right;
 }
 
 li a {
@@ -24,14 +29,17 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    border-radius: 18px;
 }
 
 li a:hover:not(.active) {
     background-color: #111;
+    color: #00BFFF;
 }
 
 #active {
-    background-color: #04AA6d;
+    background-color: #DCDCDC;
+    color: #191970;
 }
 
 #ufologo { 
@@ -52,4 +60,68 @@ li a:hover:not(.active) {
 .gridp img {
     width: 100%;
     margin: 10px;
+}
+
+.foot {
+    text-align: center;
+}
+
+.photoArray {
+    display: grid;
+    grid-gap: .5em;
+    /* grid-template-areas:
+        "p1 p2"
+        "p3 p2"; */
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 15rem 15rem;
+    height: 30rem;
+    width: 100%;
+}
+
+/* .photoArray > div {
+    border: 2px solid #111;
+} */
+
+/* .photoArray > div:second-child {
+    grid-area: p2;
+} */
+
+.p1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: bisque;
+    border-radius: 25px;
+}
+
+.p2 {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    background-color: aqua;
+    border-radius: 25px;
+}
+
+.p3 { 
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color: aquamarine;
+    border-radius: 25px;
+}
+
+img { 
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.split {
+    display: flex;
+    height: 100%;
+
+}
+
+.s1 { 
+    flex: 1;
+    border: 2px solid #111;
+    background-image: url("images/ufoLogo.png");
 }
